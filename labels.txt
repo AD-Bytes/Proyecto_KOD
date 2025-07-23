@@ -1,0 +1,11 @@
+0 Ciruela
+1 Coco
+2 Guayaba
+3 Limon
+4 Mamon
+5 Mango
+6 Maracuya
+7 Níspero
+8 Papaya
+9 Platano
+10 Sandia

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3674B5;
+}
+
+
+
+
+.Cubo-titulo {
+    
+    background: #578FCA;
+    padding: 20px;
+    border: 10px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.Padre {
+    background-color: #89b1da;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.Especificaciones {
+    padding: 10px;
+    display: flex;
+}
+
+.Importante-2 {
+    margin-left: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 330px;
+    max-width: 500px;
+    max-height: 330px;
+    background-color: #ffffffee;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.Cubo-Perfil {
+    margin-left: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #FADA7A;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+form {
+    padding: 5px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 330px;
+    max-width: 500px;
+    max-height: 330px;
+    background-color: #ffffffee;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form-control {
+    display: block;
+    position: relative;
+}
+
+.file-label { 
+    -moz-padding-start: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 42px;
+    -webkit-padding-end: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #578FCA;
+    color: #578FCA;
+    position: absolute;
+    top: +45px;
+    left: -10px;
+}
+
+.file-button-P {
+    width: 100%;
+    padding: 20px 20px;
+    margin: auto;
+}
+.Cubo-Subtitulo {
+    width: 500px;
+    height: 430px;
+    box-sizing: border-box;
+    background: #F5F0CD;
+    padding: 20px;
+    border: 10px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+    color: rgb(224, 226, 228);
+    font-family: "Roboto";
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+    color: rgb(72, 75, 78);
+    font-family: "Roboto";
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 0;
+    color: rgb(72, 75, 78);
+    font-family: "Roboto";
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    margin: 0;
+    color: rgb(72, 75, 78);
+    font-family: "Roboto";
+    text-align: center;
+}
+
+ul {
+    margin-block-start: 2em;
+}
+
+li {
+    font-family: "Roboto";
+    margin: 2px;
+    letter-spacing: 1px;
+}
+
+
+

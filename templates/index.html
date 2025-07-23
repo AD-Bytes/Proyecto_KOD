@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Proyecto </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+  </head>
+  <body>
+      <div class="Cubo-titulo">
+        <h1> Clasificador de frutas</h1>
+      </div>
+      <div class="Padre">
+        <form action="/Upload" method="post" enctype="multipart/form-data">
+          <div class="form-control">
+            <h3> Insertar Archivo</h3>
+            <label for="file-button" class="file-label">Subir</label>
+            <input type="file" id="file-button" name="file-button" class="file-button-P">
+            <input type="submit">
+            
+          </div>
+        </form>
+        {% block content %}
+        <div class="Importante Importante-2">
+          {%if T_F == 0%}
+          <h3>   Informacion de la Ciruela   </h3>
+          <p>Una ciruela mediana de aproximadamente 66 gramos aporta alrededor de 30 calorías, 0.5 gramos de proteína, 7.5 gramos de carbohidratos y 0.2 gramos de grasa. Además, es una buena fuente de fibra y vitaminas como la vitamina C y la vitamina A. </p>
+          {%elif T_F == 1%}
+          <h3>   Informacion del Coco  </h3>
+          <p>El coco Es una fruta rica en fibra que proporciona hierro, potasio, calcio, esenciales para el fortalecimiento de los músculos y la regulación de la presión arterial. Además, también aporta zinc y selenio, que son antioxidantes.</p>
+          {%elif T_F == 2%}
+          <h3>   Informacion de la Guayaba  </h3>
+          <p>La guayaba es rica en vitamina C, fibra, potasio, y contiene una variedad de vitaminas y minerales, incluyendo vitamina A, vitaminas del complejo B, calcio, hierro, magnesio, fósforo y cobre.</p>
+          {%elif T_F == 3%}
+          <h3>   Informacion del limon  </h3>
+          <p>El limon Destaca por su contenido en vitamina C, aunque también presenta cantidades importantes de otras vitaminas y minerales, como el calcio, el fósforo, el magnesio y el potasio. Contiene fibra soluble; la pectina.</p>
+          {%elif T_F == 4%}
+          <h3>   Informacion del Mamon  </h3>
+          <p>El mamon posee vitaminas, C, A y algunas del complejo B. Fundamentales para reforzar el sistema inmunológico del cuerpo.</p>
+          {%elif T_F == 5%}
+          <h3>   Informacion del Mango  </h3>
+          <p>Es una excelente fuente de vitaminas A, C y del grupo B, importantes para el sistema nervioso y el correcto funcionamiento del metabolismo. Es rico en magnesio, que se relaciona con el buen funcionamiento del intestino, nervios y músculos, forma parte de huesos y dientes, mejora la inmunidad .</p>
+          {%elif T_F == 6%}
+          <h3>   Informacion de la Maracuya  </h3>
+          <p> El maracuyá es un fruto con gran aporte de vitamina C, potasio y calcio pero si por algo destaca esta fruta, desde el punto de vista nutricional, es por su gran concentración en antioxidantes. Estos compuestos están relacionados con la prevención de las patologías crónicas, pero también del envejecimiento. </p>
+          {%elif T_F == 7%}
+          <h3>   Informacion del Níspero  </h3>
+          <p>El níspero es una fruta nutritiva con bajo contenido calórico, rica en vitaminas, minerales y fibra. Aporta principalmente vitamina A, vitamina C, potasio, calcio, fósforo y magnesio, además de fibra soluble como la pectina, que favorece el tránsito intestinal. </p>
+          {%elif T_F == 8%}
+          <h3>   Informacion de la Papaya  </h3>
+          <p>La papaya es una fruta nutritiva rica en vitaminas, fibra y baja en calorías. Una porción de 100 gramos aporta alrededor de 43 calorías, 10.8 gramos de carbohidratos (incluyendo azúcares), 0.5 gramos de proteína, y 1.9 gramos de fibra. Además, es una excelente fuente de vitamina C, vitamina A, folato y minerales como potasio y magnesio. </p>
+          {%elif T_F == 9%}
+          <h3>   Informacion del Platano    </h3>
+          <p>El platano contiene minerales como el potasio, magnesio y fósforo, compuestos fenólicos y vitaminas del grupo B, vitamina A y carotenos, que favorecen el sistema nervioso y muscular.</p>
+          {%elif T_F == 10%}
+          <h3>   Informacion de la Sandia    </h3>
+          <p>La sandía ofrece múltiples beneficios para la salud gracias a su alto contenido de agua y nutrientes. Es hidratante, rica en antioxidantes como el licopeno y la vitamina C, y puede ayudar a reducir la inflamación, proteger contra enfermedades crónicas y mejorar la salud cardiovascular. También puede contribuir a una piel saludable, una buena digestión y un rendimiento deportivo mejorado. </p>
+          {%endif%}
+          
+          
+          
+        </div>
+        {% endblock %}
+        
+      </div>
+      <div class="Especificaciones">
+        <div class="Cubo-Subtitulo">
+            <h2>Lista de frutas disponibles</h2>
+            <ul>
+              <li>Ciruela</li>
+              <li>Mango</li>
+              <li>Sandia</li>
+              <li>Níspero</li>
+              <li>Mamón</li>
+              <li>Coco</li>
+              <li>Guayaba</li>
+              <li>Platano</li>
+              <li>Limón</li>
+              <li>Papaya</li>
+              <li>Maracuya</li>
+            </ul>
+        </div>
+        <div class="Cubo-Perfil">
+              <h3> Quien soy?</h3>
+              <p>Soy Anthony Daniel y este es mi proyecto de kodland.</p>
+        </div>
+      </div>
+  </body>
+</html>
