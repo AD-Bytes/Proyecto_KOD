@@ -15,6 +15,7 @@ body {
 }
 
 .Padre {
+    margin-top: 5px;
     background-color: #89b1da;
     border-radius: 10px;
     padding: 10px;

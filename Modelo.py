@@ -38,6 +38,5 @@ def C_F(image):
     index = np.argmax(prediction)
     class_name = class_names[index]
     confidence_score = prediction[0][index]
-
     
     return index
