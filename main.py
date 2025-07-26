@@ -27,7 +27,7 @@ def UploadImage():
         return "No se encontro el archivo ", 400
     if file and allowed_file(file.filename):
         file.save(f"./static/img/{file.filename}")
-        return render_template('index.html', T_F = C_F(file)) 
+        return render_template('index.html', T_F = C_F(file), ruta_img = f"./static/img/{file.filename}") 
     else:
         return "Formato no permitido ", 400
 

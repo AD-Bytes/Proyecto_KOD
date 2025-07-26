@@ -6,6 +6,7 @@ body {
     background-color: #3674B5;
 }
 
+
 .Cubo-titulo {
     
     background: #578FCA;
@@ -100,6 +101,15 @@ form {
     border: 10px solid transparent;
     border-radius: 5px 5px 5px 5px;
     
+}
+
+.Imagen {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: auto;
 }
 
 h1 {

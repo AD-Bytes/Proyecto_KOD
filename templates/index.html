@@ -9,6 +9,7 @@
       <div class="Cubo-titulo">
         <h1> Clasificador de frutas</h1>
       </div>
+      {% block content %}
       <div class="Padre">
         <form action="/Upload" method="post" enctype="multipart/form-data">
           <div class="form-control">
@@ -19,7 +20,6 @@
             
           </div>
         </form>
-        {% block content %}
         <div class="Importante">
           {%if T_F == 0%}
           <h3>   Informacion de la Ciruela   </h3>
@@ -56,10 +56,13 @@
           <p>La sandía ofrece múltiples beneficios para la salud gracias a su alto contenido de agua y nutrientes. Es hidratante, rica en antioxidantes como el licopeno y la vitamina C, y puede ayudar a reducir la inflamación, proteger contra enfermedades crónicas y mejorar la salud cardiovascular. También puede contribuir a una piel saludable, una buena digestión y un rendimiento deportivo mejorado. </p>
           {%endif%}
           
-
+          
         </div>
-        {% endblock %}
+        <div class="Importante Imagen">
+          <img src= {{ruta_img}}>
+        </div>
       </div>
+      {% endblock %}
       <div class="Especificaciones">
         <div class="Cubo-Subtitulo">
             <h2>Lista de frutas disponibles</h2>
