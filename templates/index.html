@@ -17,7 +17,40 @@
             <label for="file-button" class="file-label">Subir</label>
             <input type="file" id="file-button" name="file-button" class="file-button-P">
             <input type="submit">
+            {%if S == True and T_F == 0%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es una <span class="Ciruela"> Ciruela </span></p>
+          
+            {%elif S == True and T_F == 1%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Coco"> Coco </span></p>
             
+            {%elif S == True and T_F == 2%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es una <span class="Guayaba"> Guayaba </span></p>
+
+            {%elif S == True and T_F == 3%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Limon"> Limón </span></p>
+
+            {%elif S == True and T_F == 4%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Mamon"> Mamón </span></p>
+
+            {%elif S == True and T_F == 5%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Mango"> Mango </span></p>
+            
+            {%elif S == True and T_F == 6%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es una <span class="Maracuya"> Maracuya </span></p>
+
+            {%elif S == True and T_F == 7%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Nispero"> Nispero </span></p>
+
+            {%elif S == True and T_F == 8%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es una <span class="Papaya"> Papaya </span></p>
+
+            {%elif S == True and T_F == 9%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es un <span class="Platano"> Platano </span></p>
+
+            {%elif S == True and T_F == 10%}
+            <p class="Subido">Su archivo ha sido guardado exitosamente y es una <span class="Sandia"> Sandia </span></p>
+
+            {%endif%}
           </div>
         </form>
         <div class="Importante">
@@ -59,7 +92,7 @@
           
         </div>
         <div class="Importante Imagen">
-          <img src= {{ruta_img}}>
+          <img src= {{ruta_img}} class="Imagen-atributos">
         </div>
       </div>
       {% endblock %}
